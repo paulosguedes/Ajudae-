@@ -9,7 +9,6 @@ Paulo Sérgio – 85873
 
 # Link da demonstração
 
-
 # Instruções
 1 - acessar https://ajudae.azurewebsites.net/
 2 - testar a usabilidade da plataforma
