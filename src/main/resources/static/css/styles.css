@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/impact/impact.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('../fonts/san-francisco/SFNSText-Regular.otf')
+}
+
+.color-primary {
+  color: #E084C0;
+}
+
+.color-primary-light {
+  color: #E3BAE8;
+}
+
+.color-primary-dark {
+  color: #B526AF;
+}
+
+.color-secondary {
+  color: #D8D8D8;
+}
+
+.color-secondary-dark {
+  color: #9F9F9F;
+}
+
+.default-button {
+  border-radius: 7px;
+  width: 120px;
+  height: 45px;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.default-button.selected {
+  background-color: #E3BAE8;
+  color: #fff;
+}
+
+.default-button.color-primary {
+  border: 3px solid #E084C0;
+}
+
+.default-button.color-secondary {
+  border: 3px solid #D8D8D8;
+}
+
+/* Text inputs */
+
+.input-field {
+  margin: 0;
+}
+
+.input-field label {
+  color: #D8D8D8 !important;
+  font-size: 20px;
+  padding-left: .5rem;
+}
+
+.input-field label.active {
+  top: -7px;
+}
+
+.input-field input {
+  font-size: 20px !important;
+  border: 3px solid #D8D8D8 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #D8D8D8;
+}
+
+button:focus {
+  background-color: inherit;
+  outline: inherit;
+}
+
+body {
+  font-family: 'SF';
+}
+
+header {
+  margin: 0 1rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+main {
+  height: calc(100vh - 95px);
+  padding: 5vh 0;
+  margin: 0 5rem;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.h-100 {
+  height: 100%
+}
+
+.main-title {
+  margin: 0;
+  line-height: normal;
+  font-size: 6rem;
+  text-align: right;
+  font-family: 'Impact';
+}
+
+.main-description {
+  line-height: normal;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.link-access {
+  display: inline-flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  float: right;
+}
+
+.link-access>* {
+  margin-left: .4rem;
+}
+
+.img-little-kid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 600px;
+  padding: 0 2rem;
+}
+
+.img-walk {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 400px;
+}
+
+.logo-title {
+  margin: 0;
+  font-size: 3.6rem;
+  line-height: normal;
+  font-family: 'Impact';
+}
+
+.modal {
+  width: 350px;
+  top: 20% !important;
+  padding: 1rem;
+  border-radius: 17px;
+}
+
+.title-modal {
+  text-align: center;
+}
+
+.description-modal {
+  font-size: 16px;
+  line-height: normal;
+  margin: 1.5rem 0;
+}
+
+.intro-text-modal {
+  text-align: center;
+  font-size: 16px;
+  line-height: normal;
+  margin: 1.5rem 0;
+}
+
+.margin-top {
+  margin-top: 1rem
+}
+
+.external-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-link {
+  display: inline-flex;
+}
+
+.logo-link>* {
+  padding: 0 .5rem;
+}
+
+.btns {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btns>* {
+  margin: 0 .3rem;
+}
+
+.divider {
+  height: 2.5px;
+  background-color: #D8D8D8;
+  margin: 0 1.5rem;
+}
+
+.divider.pink {
+  background-color: #E084C0 !important;
+}
+
+.explore-box {
+  display: flex;
+  align-items: center;
+}
+
+.explore-box h2 {
+  margin: 0;
+  margin-left: 1.5rem;
+  font-size: 3.6rem;
+  line-height: normal;
+  font-family: 'Impact';
+}
+
+.explore-cards {
+  margin: 1rem 0;
+  overflow-x: auto;
+  display: flex;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  height: 500px;
+  background-color: transparent;
+  border: 2.5px solid #D8D8D8;
+  border-radius: 7px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.user-card h4 {
+  font-size: 1.7rem;
+}
+
+.user-card p {
+  text-align: right;
+}
+
+.user-card a {
+  font-weight: 600;
+  width: 100%;
+  text-align: right;
+}
