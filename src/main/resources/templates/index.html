@@ -1,41 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://thymeleaf.org" xmlns:sec="http://thymeleaf.org/thymeleaf-extras-springsecurity5">
+<html xmlns:th="http://thymeleaf.org">
 
-<head th:fragment="head">
-  <meta charset="UTF-8">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
-
-  <link type="text/css" rel="stylesheet" href="/css/styles.css" media="screen,projection" />
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="text/javascript" src="/js/init.js"></script>
-
-  <title>Ajudaê🙏 - Página inicial</title>
-</head>
+<head th:include="_template :: head"></head>
 
 <body>
-  <header th:fragment="head">
-    <div class="logo-box">
-      <div class="logo-link">
-        <h1 class="color-primary logo-title">AJUDAÊ</h1>
-        <img src="img/pray.svg" width="55" alt="logo" />
-      </div>
-    </div>
-
-    <div class="btns">
-      <button data-target="modal-registrar" href="#modal-registrar"
-        class="default-button color-secondary modal-trigger">
-        Registrar
-      </button>
-      <button data-target="modal-entrar" href="#modal-entrar" class="default-button color-primary modal-trigger">
-        Entrar
-      </button>
-    </div>
-  </header>
-  <div class="divider"></div>
+<header th:include="_template :: header-intro"></header>
+<div class="divider"></div>
   <main>
     <div class="row h-100">
       <div class="col s6 h-100 center-vertical">
@@ -71,11 +41,11 @@
             <div class="divider pink"></div>
           </div>
           <div class="input-field col s10 offset-s1 margin-top">
-            <input id="email-sign" type="email" class="validate">
+            <input id="email-sign" type="email" class="validate" required>
             <label for="email-sign">E-mail</label>
           </div>
           <div class="input-field col s10 offset-s1 margin-top">
-            <input id="password-sign" type="password" class="validate">
+            <input id="password-sign" type="password" class="validate" required>
             <label for="password-sign">Senha</label>
           </div>
           <div class="col s10 offset-s1">
@@ -91,7 +61,7 @@
             </button>
           </div>
           <div class="col s6">
-            <button href="#" class="default-button color-primary modal-close">
+            <button type="submit" class="default-button color-primary modal-close">
               Confirmar
             </button>
           </div>

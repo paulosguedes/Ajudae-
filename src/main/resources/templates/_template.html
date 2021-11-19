@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:sec="http://thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection" />
+
+    <link type="text/css" rel="stylesheet" href="/css/styles.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/js/init.js"></script>
+
+    <title>Ajudaê🙏</title>
+</head>
+
+<body>
+<header th:fragment="header-intro">
+    <div class="logo-box">
+        <div class="logo-link">
+            <h1 class="color-primary logo-title">AJUDAÊ</h1>
+            <img src="img/pray.svg" width="55" alt="logo" />
+        </div>
+    </div>
+
+    <div class="btns">
+        <button th:href="home.html" class="default-button color-secondary">
+            Registrar
+        </button>
+        <button href="home.html" class="default-button color-primary">
+            Entrar
+        </button>
+    </div>
+</header>
+<header th:fragment="header-home">
+    <div class="logo-box">
+        <div class="logo-link">
+            <h1 class="color-primary logo-title">AJUDAÊ</h1>
+            <img src="img/pray.svg" width="55" alt="logo" />
+        </div>
+    </div>
+
+    <div class="btns">
+        <a href="/" class="profile-icon">
+            <img src="img/profile.svg" width="55" alt="Foto de perfil" />
+        </a>
+    </div>
+</header>
+</body>
+</html>

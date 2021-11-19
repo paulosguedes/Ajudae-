@@ -47,11 +47,11 @@ public class UsuarioController {
     @PutMapping("/{id}")
     public ResponseEntity<UsuarioDto> update(@PathVariable Long id, @RequestBody UsuarioDto dto){
         Usuario usuario = this.usuarioService.findById(id);
-        usuario.setNome(dto.getNome());
-        usuario.setCpf(dto.getCpf());
-        usuario.setEmail(dto.getEmail());
-        usuario.setEndereco(dto.getEndereco());
-        usuario.setTelefone(dto.getTelefone());
+//        usuario.setNome(dto.getNome());
+//        usuario.setCpf(dto.getCpf());
+//        usuario.setEmail(dto.getEmail());
+//        usuario.setEndereco(dto.getEndereco());
+//        usuario.setTelefone(dto.getTelefone());
         return new ResponseEntity<>(this.usuarioMapper.convertToDto(this.usuarioService.update(usuario)), HttpStatus.ACCEPTED);
     }
 
